@@ -1,0 +1,772 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar{
+    width: .5vw;
+}
+::-webkit-scrollbar-thumb{
+    background-color: red;
+    border-radius: 100vw
+}
+::-webkit-scrollbar-track{
+    background-color: gainsboro;
+    border-radius: 100vw
+}
+
+#hero{
+    height: 100vh;
+    background: url('wallpaperflare.com_wallpaper.jpg') center no-repeat;
+    background-size: cover;
+}
+#btn1:focus{
+    outline: 1px solid whitesmoke;
+    box-shadow: none;
+}
+.ri-menu-4-line{
+    font-size: xx-large;
+    border: none;
+}
+
+#navB{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+#contents{
+    position: relative;
+    top: 30%;
+}
+#cont{
+    position: relative;
+    top: 40%;
+}
+#row{
+    width: 50%;
+}
+#colHero{
+    border-left: 4px solid grey;
+    margin: 8px 0px;
+}
+#colHero p:nth-child(2){
+    padding-left: 8px;
+}
+.social{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-90deg);
+    color: gray;
+    position: fixed;
+    left: -70px;
+    top: 50%;
+}
+.social span{
+    margin-bottom: 7px;
+}
+.social a{
+    text-decoration: none;
+    font-size: 18px;
+    color: gray;
+}
+.social a:hover{
+    color: red;
+}
+.im{
+    position: relative;
+    left: 2%;
+    color: gray;
+}
+.im::before{
+    content: '';
+    position: absolute;
+    top: 55%;
+    left: -20px;
+    width: 15px;
+    height: 3px;
+    background-color: gray;
+}
+.animate{
+    font-size: 6vw;
+    font-weight: bolder;
+    color: whitesmoke;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+}
+.typed-cursor{
+    color: white;
+    -webkit-text-stroke-width: 0;
+}
+@media screen and (max-width: 1000px) {
+    .social{
+        display: none;
+    }
+}
+#img{
+    display: flex;
+    justify-content: center;
+}
+#img img{
+    padding: 15px;
+    outline: 1px solid rgb(55, 55, 55);
+}
+#aboutP{
+    line-height: 2rem;
+}
+
+#product, #ux, #mobile{
+    position: relative;
+}
+#product span:nth-child(2){
+    position: absolute;
+    right: 0;
+}
+#ux span:nth-child(2){
+    position: absolute;
+    right: 0;
+}
+#mobile span:nth-child(2){
+    position: absolute;
+    right: 0;
+}
+#product, #ux, #mobile span{
+    font-size: 17px;
+    font-weight: bolder;
+}
+
+#btn{
+    position: relative;
+    font-weight: bolder;
+    border: 0.5px solid gray;
+    padding: 8px 18px;
+    border-radius: 1px;
+    background-color: transparent;
+    color: gray;
+    margin-top: 50px;
+}
+#btn span{
+    position: absolute;
+    background-color: red;
+    transition: transform ease-in-out 0.4s;
+}
+#btn span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1.5px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition-delay: 0s;
+}
+#btn:hover span:nth-child(1){
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+#btn span:nth-child(3){
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 1.5px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition-delay: 0.6s;
+}
+#btn:hover span:nth-child(3){
+    transform: scaleX(1);
+    transform-origin: right;
+}
+
+#btn span:nth-child(2){
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 1.5px;
+    transform: scaleX(0);
+    transform-origin: bottom;
+    transition-delay: 0.4s;
+}
+#btn:hover span:nth-child(2){
+    transform: scaleX(1);
+    transform-origin: top;
+}
+
+#btn span:nth-child(4){
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 1.5px;
+    transform: scaleX(0);
+    transform-origin: bottom;
+    transition-delay: 0.8s;
+}
+#btn:hover span:nth-child(4){
+    transform: scaleX(1);
+    transform-origin: top;
+}
+
+#about{
+    background-color: rgba(0, 0, 0, 0.959);
+}
+#services{
+    padding-top: 50px;
+    background-color: rgba(0, 0, 0, 0.959);
+}
+#border{
+    position: relative;
+    border: 1px solid gray;
+    border-radius: 2px;
+    cursor: pointer;
+}
+#border span{
+    position: absolute;
+    background-color: red;
+    transition: transform ease-in-out 0.4s;
+}
+#border span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition-delay: 0s;
+}
+#border:hover span:nth-child(1){
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.forCount{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.countUp{
+    color: whitesmoke;
+    text-align: center;
+    margin: 20px 0px;
+    font-size: 40px;
+    font-weight: 600;
+}
+.countUp + span{
+    color: red;
+    font-size: 30px;
+}
+#border span:nth-child(2){
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 100%;
+    transform: scaleX(0);
+    transform-origin: bottom;
+    transition-delay: 0.2s;
+}
+#border:hover span:nth-child(2){
+    transform: scaleX(1);
+    transform-origin: top;
+}
+
+#border span:nth-child(3){
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition-delay: 0.4s;
+}
+#border:hover span:nth-child(3){
+    transform: scaleX(1);
+    transform-origin: right;
+}
+#border span:nth-child(4){
+    bottom: 0;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    transform: scaleX(0);
+    transform-origin: top;
+    transition-delay: 0.6s;
+}
+#border:hover span:nth-child(4){
+    transform: scaleX(1);
+    transform-origin: bottom;
+}
+#serRow #bgColor div{
+    background-color: rgb(32, 32, 32);
+}
+#serRow #bgColor div:hover{
+    background-color: transparent;
+    transition: 0.5s ease;
+}
+
+#cBgcolor{
+    background-color: rgb(28, 28, 28);
+}
+.unique{
+    background-color: rgba(0, 0, 0, 0.959);
+}
+#borderLR{
+    border-left: 2px solid rgb(28, 28, 28);
+    border-right: 2px solid rgb(28, 28, 28);
+}
+.image{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image2{
+    height: 500px;
+    width: 500px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+#img3 div img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+#bgColor1 div{
+    background-color: rgb(32, 32, 32);
+}
+#border1{
+    position: relative;
+    border-top: 3px solid red;
+    background-color: rgb(26, 25, 25);
+    cursor: pointer;
+}
+#border2{
+    position: relative;
+    border-top: 3px solid yellow;
+    cursor: pointer;
+    background-color: rgb(30, 28, 28);
+}
+#border3{
+    position: relative;
+    border-top: 3px solid aqua;
+    background-color: rgb(16, 16, 16);
+    cursor: pointer;
+}
+#red{
+    height: 3px;
+    width: 100px;
+    background-color: red;
+    border-radius: 2px;
+}
+#yel{
+    height: 3px;
+    width: 100px;
+    background-color: yellow;
+    border-radius: 2px;
+}
+#aqua{
+    height: 3px;
+    width: 100px;
+    background-color: aqua;
+    border-radius: 2px;
+}
+.overlay{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95%;
+    width: 93%;
+    opacity: 0.3;
+    background-color: black;
+    cursor: pointer;
+    visibility: hidden;
+    transition: 0.1s ease-in-out;
+}
+.overlay1{
+    position: absolute;
+    height: 95%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    opacity: 0.3;
+    cursor: pointer;
+    visibility: hidden;
+}
+.overlay span i{
+    display: inline-block;
+    font-size: 30px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    color: white;
+}
+.overlay1 span i{
+    display: inline-block;
+    font-size: 30px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    color: white;
+}
+.image:hover img{
+    filter: blur(3px);
+    transition: 0.3s ease;
+}
+.image:hover .overlay{
+    visibility: visible;
+}
+#img3 div:hover img{
+    filter: blur(3px);
+    transition: 0.3s ease;
+}
+#img3 div:hover .overlay{
+    visibility: visible;
+    transition: 0.8s ease;
+}
+.image2:hover .overlay1{
+    visibility: visible;
+    transition: 0.8s ease;
+}
+.textdown{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.5s ease;
+}
+.textdown1{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.5s ease;
+}
+.image:hover .textdown{
+    height: 0;
+}
+.image2:hover .textdown1{
+    height: 0;
+}
+#border1 span{
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: red;
+    bottom: 0;
+    left: 0;
+    transform: scale(0);
+    transform-origin: left;
+    transition: transform ease-in-out 0.4s;
+    transition-delay: 0s;
+}
+#border1:hover span{
+    transform: scale(1);
+    transform-origin: left;
+}
+
+#border2 span{
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: yellow;
+    bottom: 0;
+    left: 0;
+    transform: scale(0);
+    transform-origin: left;
+    transition: transform ease-in-out 0.4s;
+    transition-delay: 0s;
+}
+#border2:hover span{
+    transform: scale(1);
+    transform-origin: left;
+}
+
+#border3 span{
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: aqua;
+    bottom: 0;
+    left: 0;
+    transform: scale(0);
+    transform-origin: left;
+    transition: transform ease-in-out 0.4s;
+    transition-delay: 0s;
+}
+#border3:hover span{
+    transform: scale(1);
+    transform-origin: left;
+}
+.imgTeam img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s ease;
+}
+.name1{
+    border-left: 1px solid red;
+    border-right: 1px solid yellow;
+    border-bottom: 1px solid aqua;
+    background-color: rgb(32, 31, 31);
+}
+.name2{
+    border-left: 1px solid red;
+    border-right: 1px solid yellow;
+    border-bottom: 1px solid aqua;
+    background-color: rgb(21, 20, 20);
+
+}
+.name3{
+    border-left: 1px solid red;
+    border-right: 1px solid yellow;
+    border-bottom: 1px solid aqua;
+    background-color: rgb(32, 31, 31);
+    
+}
+.imgTeam{
+    position: relative;
+    cursor: pointer;
+}
+.footSocials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.footSocials i{
+    display: inline-block;
+    font-size: x-large;
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+    background-color: black;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.8s ease;
+}
+.footSocials i:hover{
+    background-color: rgb(245, 83, 83);
+}
+.socials{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: 0.6s ease;
+}
+.socials i{
+    font-size: large;
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.imgTeam:hover .socials{
+    height: 30%;
+}
+.imgTeam:hover img{
+    filter: blur(3px);
+}
+#callMessage div input{
+    background-color: rgb(20, 20, 20);
+    border: 1px solid rgb(69, 65, 65);
+}
+#callMessage div textarea{
+    background-color: rgb(20, 20, 20);
+    width: 100%;
+}
+#callMessage div button{
+    position: relative;
+    background-color: rgb(40, 39, 39);
+    border: none;
+    width: 40%;
+    height: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+}
+#callMessage div button i{
+    font-size: x-large;
+    padding-right: 15px;
+}
+#callMessage div button .leftR{
+    position: absolute;
+    left: 0;
+    background-color: rgb(235, 64, 64);
+    height: 100%;
+    width: 0;
+    transition: 0.5s ease;
+}
+#callMessage div{
+    background-color: rgb(17, 17, 17);
+    width: 100%;
+}
+.zind{
+    z-index: 1;
+}
+#callMessage div button:hover .leftR{
+    width: 50%;
+}
+#callMessage div button .leftRR{
+    position: absolute;
+    right: 0;
+    background-color: rgb(235, 64, 64);
+    height: 100%;
+    width: 0;
+    transition: 0.5s ease;
+}
+#callMessage div button:hover .leftRR{
+    width: 50%;
+}
+#callMessage{
+    display: flex;
+    justify-content: center;
+}
+#eca div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(69, 65, 65);
+    height: 100%;
+}
+#flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+#newsInput span{
+    font-size: 18px;
+    font-weight: bold;
+}
+#newsInput input{
+    height: 60px;
+    background-color: rgb(23, 23, 23);
+    border: 0.5px solid rgb(54, 54, 54);
+}
+#newsInput div{
+    display: inline-block;
+    position: relative;
+}
+#newsInput div i{
+    display: inline-block;
+    position: absolute;
+    right: 5%;
+    top: 20%;
+    font-size: 25px;
+    color: gray;
+}
+#animateBorder{
+    position: relative;
+    border-top: 0.5px solid rgb(40, 40, 40);
+    overflow: hidden;
+}
+.slide{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: red;
+    height: 1px;
+    width: 150px;
+    animation: slide 2s infinite ease;
+}
+
+@keyframes slide {
+    from{right: -145px;} to {right: 100%;}
+}
+
+#count,#projects,#resume,#teams,#contacts,#footsocial,#footer{
+    background-color: rgba(0, 0, 0, 0.959);
+}
+#projects{
+    position: relative;
+}
+#bgDark a{
+    font-size: 25px;
+    font-weight: 600;
+}
+#drpLst{
+    background-color: transparent;
+    text-align: center;
+    border: 1px solid grey;
+}
+#drpLst a{
+    font-size: 20px;
+    color: grey;
+    font-weight: 500;
+}
+#disIMg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow-y: hidden;
+    z-index: 10;
+    visibility: hidden;
+}
+#disIMg img{
+    position: absolute;
+    height: 650px;
+    width: 650px;
+    object-fit: contain;
+    cursor: pointer;
+}
+#disIMg .imgBody{
+    visibility: hidden;
+}
+#disIMg .imgBody.show{
+    visibility: visible;
+}
