@@ -15,7 +15,7 @@
     border-radius: 100vw
 }
 
-#hero{
+#hero1{
     height: 100vh;
     background: url('wallpaperflare.com_wallpaper.jpg') center no-repeat;
     background-size: cover;
@@ -36,6 +36,7 @@
     position: relative;
     top: 30%;
 }
+
 #cont{
     position: relative;
     top: 40%;
@@ -107,6 +108,7 @@
     justify-content: center;
 }
 #img img{
+    width: 100%;
     padding: 15px;
     outline: 1px solid rgb(55, 55, 55);
 }
@@ -759,8 +761,8 @@
 }
 #disIMg img{
     position: absolute;
-    height: 650px;
-    width: 650px;
+    height: 90%;
+    width: 90%;
     object-fit: contain;
     cursor: pointer;
 }
